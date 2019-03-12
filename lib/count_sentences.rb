@@ -16,6 +16,6 @@ class String
 
   def count_sentences
     arr = self.split
-    arr.count { |x| x.end_with?(".") || x.end_with?("?") || x.end_with?("!")}
+    arr.count { |x| x.end_with?("." || "!" || "?") }
   end  
 end
